@@ -1,0 +1,8 @@
+<input type="text" ng-model="query">
+
+<ul>
+    <li ng-repeat="post in posts | filter:query">
+        <h4><a href="#/post/{{post.id}}">{{post.title}}</a></h4>
+        <p>{{post.text}}</p>
+    </li>
+</ul>

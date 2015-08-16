@@ -1,0 +1,93 @@
+<section id="header">
+
+    <div class="clearfix header_middle">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <span class="fa-stack icon fa-lg">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x"></i>
+                        </span>
+                        info@site.com
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="fa-stack icon fa-lg">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-phone fa-stack-1x"></i>
+                        </span>
+                        0-533-569
+                    </div>
+                    <div class="col-lg-5">
+                        <span class="fa-stack icon fa-lg">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-map-marker fa-stack-1x"></i>
+                        </span>
+                        Lorem Ipsum is simply dummy is simply
+                    </div>
+                    <div class="col-lg-3 social">
+                        <div class="col-lg-3">
+                             <span class="fa-stack icon fa-lg">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-skype fa-stack-1x"></i>
+                            </span>
+                        </div>
+
+                        <div class="col-lg-3">
+                             <span class="fa-stack icon fa-lg">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-google-plus fa-stack-1x"></i>
+                            </span>
+                        </div>
+
+                        <div class="col-lg-3">
+                             <span class="fa-stack icon fa-lg">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </div>
+
+                        <div class="col-lg-3">
+                             <span class="fa-stack icon fa-lg">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-inverse  navbar" role="navigation"  bs-navbar>
+
+            <div class="container site-nav">
+                <div class="navbar-header">
+                    <button ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="#/"><img src="{{SITE_URL}}images/logo.jpg"></a>
+                </div>
+                <div ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true" class="collapse navbar-collapse" >
+                    <ul class="navbar-nav navbar-right nav">
+                        <li data-match-route="/$">
+                            <a href="#/">Home</a>
+                        </li>
+                        <li data-match-route="/about">
+                            <a href="#/about">About</a>
+                        </li>
+                        <li data-match-route="/contact">
+                            <a href="#/contact">Contact</a>
+                        </li>
+                        <li data-match-route="/login">
+                            <a href="#/posts">Posts</a>
+                        </li>
+                        <li data-match-route="/login">
+                            <a href="#/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
