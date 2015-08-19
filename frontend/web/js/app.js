@@ -32,6 +32,10 @@ app.config(['$routeProvider',
                 templateUrl: 'views/postdetail.html',
                 controller:'DetailCtrl'
             }).
+            when('/blog', {
+                templateUrl: 'views/blog.html'
+
+            }).
             otherwise({
                 templateUrl: '/'
             });
