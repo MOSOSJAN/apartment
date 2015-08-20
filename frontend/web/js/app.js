@@ -36,6 +36,10 @@ app.config(['$routeProvider',
                 templateUrl: 'views/blog.html'
 
             }).
+            when('/categoys', {
+                templateUrl: 'views/categoys.html'
+
+            }).
             otherwise({
                 templateUrl: '/'
             });
